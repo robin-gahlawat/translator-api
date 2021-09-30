@@ -29,3 +29,8 @@ Tools used:
  -> url: `localhost:3000/translate` (json object must be inside body )  
   
 -> Make sure that mongodb is installed in system.  
+
+JSON object:
+-> To translate a message, we are providing this object via url's body.                                                          
+-> In lang property of this object, we use language codes as mentioned in googletrans.                                                 
+-> Link to language codes: `https://cloud.google.com/translate/docs/languages`
