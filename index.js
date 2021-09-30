@@ -22,7 +22,7 @@ const port = process.env.PORT || 3000;
 app.use(express.json());
 
 
-app.get('/', (request, reponse)=>{
+app.get('/', (request, response)=>{
     response.send('Translation API is working');
 })
 
