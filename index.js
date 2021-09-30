@@ -11,6 +11,7 @@ const handleTranslation = require('./translation/handleTranslation');
 const TranslationSchema = require('./database/translations');
 
 const { response, request } = require('express');
+const { replaceOne } = require('./database/translations');
 
 const app = express();
 const port = process.env.PORT || 3000;
@@ -19,6 +20,11 @@ const port = process.env.PORT || 3000;
  * so we can access it in our request handlers.
 */
 app.use(express.json());
+
+
+app.get('/', (request, reponse)=>{
+    response.send('Translation API is working');
+})
 
 
 app.get('/translate', (request, response)=>{
